@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity" >
+
+<TableLayout
+
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"
+android:layout_marginTop="325dp"
+>
+	<TableRow>
+		<TextView
+			android:text="User ID:"
+			android:width ="100dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="40dp"
+		/>
+		<EditText
+		    android:id="@+id/uid"
+    		android:hint="enter userID"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp" />
+	</TableRow>
+
+	<TableRow>
+	<TextView
+			android:text="Password:"
+			android:width ="100dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/passw"
+    		android:hint="enter Password"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"
+			android:password="true"/>
+</TableRow>
+<TableRow>
+<TextView />
+<CheckBox 
+    		android:id="@+id/rempassw"
+			android:textSize="10sp"
+    		android:paddingLeft="30dp"
+			android:width="200dp"
+			android:text="Remember Password"
+/>
+</TableRow>
+<TableRow>
+<TextView />
+<Button
+			android:id="@+id/bsignin"
+			android:textSize="10sp"
+			android:layout_width="20dp"
+    		android:text="Log In"
+    		android:paddingLeft="10dp" />
+</TableRow>
+
+<TableRow>
+<TextView />
+<TextView
+			android:id="@+id/newuser"
+			android:text="new USER?"
+			android:width ="200dp"
+			android:textSize="10sp"
+    		android:paddingLeft="10dp"/>
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+<!-- 
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity" >
+
+  
+
+   
+    
+<EditText
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:id="@+id/uid"
+    android:hint="enter your userID"
+    android:textSize="25sp"
+    android:paddingLeft="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    />
+    
+ -->
