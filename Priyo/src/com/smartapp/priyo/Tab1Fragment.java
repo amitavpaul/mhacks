@@ -14,10 +14,10 @@ public class Tab1Fragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_main_dummy,
 				container, false);
-		TextView dummyTextView = (TextView) rootView
-				.findViewById(R.id.section_label);
-		// Setting the text in the TextView
-		dummyTextView.setText("Tab 1");
+		
+		
+			
+		
 		return rootView;
 	}
 }

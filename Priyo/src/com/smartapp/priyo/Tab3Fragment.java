@@ -16,11 +16,6 @@ public class Tab3Fragment extends Fragment {
 				container, false);
 
 
-		TextView dummyTextView = (TextView) rootView
-				.findViewById(R.id.section_label);
-
-		// Setting the text in the TextView
-		dummyTextView.setText("Tab 3");
 		return rootView;
 	}
 }

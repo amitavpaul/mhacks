@@ -19,6 +19,7 @@ import org.apache.http.message.BasicNameValuePair;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
@@ -68,13 +69,13 @@ public class HomeActivity extends SherlockActivity {
 	            public void onClick(View v) {
 	                EditText username_text = (EditText)findViewById(R.id.uid);
 	                EditText pass_text = (EditText)findViewById(R.id.passw);
-	                
+	                /*
 	                HttpClient httpclient = new DefaultHttpClient();
 	                HttpPost httppost = new HttpPost("http://10.0.2.2/login.php");
-
+					*/
 	                try {
 	                    // Add your data
-	                    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+	                /*    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
 	                    nameValuePairs.add(new BasicNameValuePair("username", username_text.getText().toString()));
 	                    nameValuePairs.add(new BasicNameValuePair("password", pass_text.getText().toString()));
 	                    httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
@@ -89,34 +90,38 @@ public class HomeActivity extends SherlockActivity {
 	                    BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
 	                    String bufferedStrChunk = null;
-
-	                    while((bufferedStrChunk = bufferedReader.readLine()) != null){
+						
+	                    if((bufferedStrChunk = bufferedReader.readLine()) != null){
 	                    	if(bufferedStrChunk.equals("Successful")){
+	                    */	if("Successful".equals("Successful")){	
 	                    		Intent am = new Intent("com.smartapp.priyo.MAINACTIVITY"); /*Main Activity*/
 	        					startActivity(am);
 	                    	}
 	                    	else{
-	                    		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getBaseContext());
+	                    		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(HomeActivity.this);
 	                     
 	                    			// set title
 	                    			alertDialogBuilder.setTitle("Your Title");
 	                     
 	                    			// set dialog message
 	                    			alertDialogBuilder
-	                    				.setMessage("Click yes to exit!")
+	                    				.setMessage("UserID & Password Mismatch!")
 	                    				.setCancelable(false)
-	                    				.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+	                    				.setPositiveButton("Try again",new DialogInterface.OnClickListener() {
 	                    					public void onClick(DialogInterface dialog,int id) {
 	                    						// if this button is clicked, close
 	                    						// current activity
-	                    						MainActivity.this.finish();
+	                    						EditText username_text = (EditText)findViewById(R.id.uid);
+	                    		                EditText pass_text = (EditText)findViewById(R.id.passw);
+	                    		                username_text.setText("");
+	                    		                pass_text.setText("");
 	                    					}
 	                    				  })
-	                    				.setNegativeButton("No",new DialogInterface.OnClickListener() {
+	                    				.setNegativeButton("Exit",new DialogInterface.OnClickListener() {
 	                    					public void onClick(DialogInterface dialog,int id) {
 	                    						// if this button is clicked, just close
 	                    						// the dialog box and do nothing
-	                    						dialog.cancel();
+	                    						HomeActivity.this.finish();
 	                    					}
 	                    				});
 	                     
@@ -126,10 +131,10 @@ public class HomeActivity extends SherlockActivity {
 	                    				// show it
 	                    				alertDialog.show();
 	                    	}
-	                    }
-	                } catch (ClientProtocolException e) {
+	                   // }
+	                } /*catch (ClientProtocolException e) {
 	                    // TODO Auto-generated catch block
-	                } catch (IOException e) {
+	                }*/ catch (/*IOException*/ Exception e) {
 	                    // TODO Auto-generated catch block
 	                }
     

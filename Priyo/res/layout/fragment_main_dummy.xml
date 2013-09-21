@@ -6,11 +6,127 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity$DummySectionFragment" >
+    android:background="#FFFFFF"
+    tools:context=".MainActivity$DummySectionFragment"
+    >
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TableLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+	>
+	<TableRow>
+		<TextView
+			android:text="Register Your Car"
+			android:textStyle="bold"
+			android:width ="150dp"
+			android:textColor="#919191"
+    		android:textSize="14sp"
+    		android:paddingLeft="20dp"
+		/>
+	</TableRow>
 
+	<TableRow>
+	<TextView
+			android:text="VIN:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/vin"
+    		android:hint="Vehicle Identification Number"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView />
+
+<Button
+			android:id="@+id/bfind"
+			android:textSize="10sp"
+			android:layout_width="20dp"
+    		android:text="Find"
+    		android:paddingLeft="10dp" />
+
+</TableRow>
+<TableRow>
+<TextView />
+<TextView
+			android:text="If VIN is not available"
+			android:width ="100dp"
+			android:textColor="#919191"
+    		android:textSize="10sp"
+    		android:textStyle="bold"
+    		android:paddingLeft="10dp"
+    		android:layout_marginTop="35dp"
+    		android:paddingBottom="5dp"
+    		/>
+</TableRow>
+
+
+<TableRow>
+	<TextView
+			android:text="Year:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/year"
+    		android:hint="Year(4 digit)"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView
+			android:text="Manufacturer:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/make"
+    		android:hint="Manufacturer Name (with id)"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView
+			android:text="Model:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/model"
+    		android:hint="model number"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView />
+<Button
+			android:id="@+id/bffind"
+			android:textSize="10sp"
+			android:layout_width="20dp"
+    		android:text="Find"
+    		android:paddingLeft="10dp" />
+
+</TableRow>
+
+
+</TableLayout>
+    
 </RelativeLayout>

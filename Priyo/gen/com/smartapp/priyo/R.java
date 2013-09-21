@@ -963,22 +963,25 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_custom_title=0x7f04003d;
+        public static final int action_custom_title=0x7f040042;
+        public static final int bffind=0x7f04003f;
+        public static final int bfind=0x7f04003b;
         public static final int bsignin=0x7f040035;
         public static final int coverflow=0x7f040038;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
         public static final int homeAsUp=0x7f040006;
-        public static final int imageView1=0x7f04003c;
+        public static final int imageView1=0x7f040041;
         public static final int listMode=0x7f040002;
-        public static final int menu_settings=0x7f04003e;
-        public static final int myabs_title=0x7f04003b;
+        public static final int make=0x7f04003d;
+        public static final int menu_settings=0x7f040043;
+        public static final int model=0x7f04003e;
+        public static final int myabs_title=0x7f040040;
         public static final int newuser=0x7f040036;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040037;
         public static final int passw=0x7f040033;
         public static final int rempassw=0x7f040034;
-        public static final int section_label=0x7f04003a;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
@@ -986,7 +989,9 @@ containing a value of this type.
         public static final int tvNewsTitle=0x7f040039;
         public static final int uid=0x7f040032;
         public static final int useLogo=0x7f040004;
+        public static final int vin=0x7f04003a;
         public static final int wrap_content=0x7f040000;
+        public static final int year=0x7f04003c;
     }
     public static final class integer {
         public static final int abs__max_action_buttons=0x7f080000;
