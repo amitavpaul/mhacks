@@ -45,10 +45,10 @@
 	<TextView />
 
 <Button
-			android:id="@+id/bfind"
+			android:id="@+id/bvinr"
 			android:textSize="10sp"
 			android:layout_width="20dp"
-    		android:text="Find"
+    		android:text="Register"
     		android:paddingLeft="10dp" />
 
 </TableRow>
@@ -85,14 +85,14 @@
 
 <TableRow>
 	<TextView
-			android:text="Manufacturer:"
+			android:text="makeID:"
 			android:width ="70dp"
 			android:textColor="#919191"
     		android:textSize="12sp"
     		android:paddingLeft="30dp"/>
 <EditText
 			android:id="@+id/make"
-    		android:hint="Manufacturer Name (with id)"
+    		android:hint="Manufacturer ID"
     		android:textSize="12sp"
     		android:paddingLeft="10dp"
 			android:width="200dp"/>
@@ -101,14 +101,46 @@
 
 <TableRow>
 	<TextView
-			android:text="Model:"
+			android:text="modelID:"
 			android:width ="70dp"
 			android:textColor="#919191"
     		android:textSize="12sp"
     		android:paddingLeft="30dp"/>
 <EditText
 			android:id="@+id/model"
-    		android:hint="model number"
+    		android:hint="model ID number"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView
+			android:text="subModelID:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/submodel"
+    		android:hint="Sub Model ID number"
+    		android:textSize="12sp"
+    		android:paddingLeft="10dp"
+			android:width="200dp"/>
+
+</TableRow>
+
+<TableRow>
+	<TextView
+			android:text="engineID:"
+			android:width ="70dp"
+			android:textColor="#919191"
+    		android:textSize="12sp"
+    		android:paddingLeft="30dp"/>
+<EditText
+			android:id="@+id/engine"
+    		android:hint="Engine ID number"
     		android:textSize="12sp"
     		android:paddingLeft="10dp"
 			android:width="200dp"/>
@@ -118,10 +150,10 @@
 <TableRow>
 	<TextView />
 <Button
-			android:id="@+id/bffind"
+			android:id="@+id/bymmer"
 			android:textSize="10sp"
 			android:layout_width="20dp"
-    		android:text="Find"
+    		android:text="Register"
     		android:paddingLeft="10dp" />
 
 </TableRow>
