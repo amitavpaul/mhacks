@@ -963,22 +963,28 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_custom_title=0x7f040044;
+        public static final int action_custom_title=0x7f04004b;
+        public static final int bdp=0x7f040048;
+        public static final int bfinfo=0x7f040046;
         public static final int bsignin=0x7f040035;
         public static final int bvinr=0x7f04003b;
         public static final int bymmer=0x7f040041;
+        public static final int carinfo=0x7f040043;
         public static final int coverflow=0x7f040038;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
         public static final int engine=0x7f040040;
         public static final int homeAsUp=0x7f040006;
-        public static final int imageView1=0x7f040043;
+        public static final int imageView1=0x7f04004a;
         public static final int listMode=0x7f040002;
+        public static final int maininfo=0x7f040047;
         public static final int make=0x7f04003d;
-        public static final int menu_settings=0x7f040045;
+        public static final int menu_settings=0x7f04004c;
         public static final int model=0x7f04003e;
-        public static final int myabs_title=0x7f040042;
+        public static final int myabs_title=0x7f040049;
+        public static final int ncars=0x7f040044;
         public static final int newuser=0x7f040036;
+        public static final int nocarinfo=0x7f040042;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040037;
         public static final int passw=0x7f040033;
@@ -992,6 +998,7 @@ containing a value of this type.
         public static final int uid=0x7f040032;
         public static final int useLogo=0x7f040004;
         public static final int vin=0x7f04003a;
+        public static final int vsid=0x7f040045;
         public static final int wrap_content=0x7f040000;
         public static final int year=0x7f04003c;
     }
@@ -1024,11 +1031,12 @@ containing a value of this type.
         public static final int activity_main=0x7f030016;
         public static final int fragment_buy_cars=0x7f030017;
         public static final int fragment_main_dummy=0x7f030018;
-        public static final int myabs_layout=0x7f030019;
-        public static final int myabs_layout_home=0x7f03001a;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001b;
-        public static final int sherlock_spinner_item=0x7f03001c;
-        public static final int tab_title=0x7f03001d;
+        public static final int maintenance=0x7f030019;
+        public static final int myabs_layout=0x7f03001a;
+        public static final int myabs_layout_home=0x7f03001b;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
+        public static final int sherlock_spinner_item=0x7f03001d;
+        public static final int tab_title=0x7f03001e;
     }
     public static final class menu {
         public static final int activity_home=0x7f0b0000;
